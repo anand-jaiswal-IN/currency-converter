@@ -21,7 +21,7 @@ function CurrencyTextBox({
             name={textBoxName}
             placeholder="Amount"
             value={amount}
-            className="bg-transparent w-[100%] outline-none"
+            className="bg-transparent w-[100%] outline-none py-2"
             onChange={(e) => setAmount && setAmount(e.target.value)}
             disabled={disabledTextBox}
           />
@@ -33,7 +33,7 @@ function CurrencyTextBox({
             name="currency"
             onChange={(e) => setCurrency && setCurrency(e.target.value)}
             value={selectedCurrency}
-            className="px-1 my-1"
+            className="p-2 my-1 rounded-md"
           >
             {currencyOptions.map((val) => (
               <option key={val} value={val}>
